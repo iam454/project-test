@@ -1,0 +1,14 @@
+name: github actions 사용해보기
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Hello World" 찍기
+        run: echo "Hello World"
